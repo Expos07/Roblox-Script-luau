@@ -51,3 +51,22 @@ while true do
 	print("task 2")
 	task.wait(.01)
 end
+
+--💎coroutine.status()
+local loop1 = coroutine.create(function()
+	--[[while true do
+		print("task 1")
+		task.wait(.01)
+	end]]
+end)
+
+print(coroutine.status(loop1))
+coroutine.resume(loop1)
+print(coroutine.status(loop1))
+
+--[[while true do
+	print("task 2")
+	task.wait(.01)
+end]]
+
+--💎coroutine.yield()
