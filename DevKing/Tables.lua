@@ -16,18 +16,10 @@ print(PlayerPhoneNumbers[1])
 
 local PlayerPhoneNumbers = {4, 6, 3, 6, 8, 1}
 
-table.concat(PlayerPhoneNumbers," ")
-print(PlayerPhoneNumbers)
-
-------------------
-
-local PlayerPhoneNumbers = {4, 6, 3, 6, 8, 1}
-
 print(table.concat(PlayerPhoneNumbers," "))
 
 ------------------
 
 local omlette = {"Ham", "Egg", "Cheese"}
 
-table.concat(omlette," ")
-print(omlette)
+print(table.concat(omlette, ", "))
