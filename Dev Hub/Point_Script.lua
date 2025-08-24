@@ -37,7 +37,7 @@ local function givePoints(player)
 end
 
 local function partTouched(otherPart)
-	local player = player:GetPlayerFromCharacter(otherPart.Parent)
+	local player = player:GetPlayerFromCharacter(otherPart.Parent) -- Roblox가 내부적으로 캐릭터-플레이어를 확인
 	if player then
 		givePoints(player)
 	end
